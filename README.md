@@ -168,5 +168,5 @@ Mystery Solved ✅
 ## 🚀 How to Use This Repository
 
 1. Clone the repository:  
-   git clone https://github.com/Saitheja20sql-murder-mystery-solution.git
+   git clone https://github.com/Saitheja20/sql-murder-mystery-solution.git
    cd sql-murder-mystery-solution
