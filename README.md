@@ -93,14 +93,14 @@ Text query:
 **Select * from person where name like 'Annabel%'.**
 
 And again, I checked the **drivers_license** table for details:  
-**Select all from drivers_license.**
+**Select * from drivers_license.**
 
 ---
 
 ### 3️⃣ Checking Witness Statements
 
 I checked the **interview table** for both witnesses to see what they said:  
-**Select all from interview.**
+**Select * from interview.**
 
 Key information I got:  
 - **Witness 1** saw a man with a **Get Fit Now Gym bag**, partial plate **H42W**  
@@ -111,15 +111,15 @@ Key information I got:
 ### 4️⃣ Identifying Possible Suspects
 
 Since the suspect had a **Gold Gym membership**, I searched for:  
-**Select all from get_fit_now_member where membership_status = 'gold' and id like '48Z%'.**
+**Select * from get_fit_now_member where membership_status = 'gold' and id like '48Z%'.**
 
 I found two suspects:  
 - Joe Germuska  
 - Jeremy Bowers
 
 Then I checked their info:  
-**Select all from person where name like 'Joe Germuska%'.**  
-**Select all from person where name like 'Jeremy Bowers%'.**
+**Select * from person where name like 'Joe Germuska%'.**  
+**Select * from person where name like 'Jeremy Bowers%'.**
 
 ---
 
@@ -127,10 +127,10 @@ Then I checked their info:
 
 Witness 2 said the suspect was at the gym on **2018-01-09**,  
 so I checked the **check-in table**:  
-**Select all from get_fit_now_check_in where check_in_date = '20180109'.**
+**Select * from get_fit_now_check_in where check_in_date = '20180109'.**
 
 Then I matched the **car plate** with the clue H42W:  
-**Select all from drivers_license where plate_number like '%H42W%'.**
+**Select * from drivers_license where plate_number like '%H42W%'.**
 
 This confirmed that **Jeremy Bowers** was the **murderer**.  
 I submitted him to the solution table:  
@@ -147,16 +147,16 @@ He revealed there was a **real mastermind** behind the crime.
 Steps I followed:
 
 1. Checked **Facebook event check-ins** for the **SQL Symphony Concert in December 2017**  
-   **Select all from facebook_event_checkin where event_name = 'SQL Symphony Concert' and date like '201712%'.**
+   **Select * from facebook_event_checkin where event_name = 'SQL Symphony Concert' and date like '201712%'.**
 
 2. Focused on **Tesla Model S owners** matching **height and hair color** from the driver license data:  
-   **Select all from drivers_license where car_make like 'Tesla' and car_model like 'Model S'.**
+   **Select * from drivers_license where car_make like 'Tesla' and car_model like 'Model S'.**
 
 3. Found a match for **Miranda Priestly** using her **license ID 202298**:  
-   **Select all from person where license_id = '202298'.**
+   **Select * from person where license_id = '202298'.**
 
 4. Verified her **income** to confirm she had the resources to plan the crime:  
-   **Select all from income where ssn = '987756388'.**
+   **Select * from income where ssn = '987756388'.**
 
 Final submission:  
 **Insert into solution values (1, 'Miranda Priestly').**  
@@ -175,7 +175,6 @@ Mystery Solved ✅
 
 ## 🚀 How to Use This Repository
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/<your-username>/sql-murder-mystery-solution.git
+1. Clone the repository:  
+   git clone https://github.com/Saitheja20sql-murder-mystery-solution.git
    cd sql-murder-mystery-solution
