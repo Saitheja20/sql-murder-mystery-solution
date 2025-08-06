@@ -50,14 +50,6 @@ Below are all the SQL queries used in my investigation:
 
 ---
 
-## 🖼️ Step-by-Step Visual Solution
-
-My **full investigation** with all the reasoning and steps can be seen in the image below:
-
-![SQL Murder Mystery Solution](Murder_mystery_solution.png)
-
----
-
 ## 💻 My Investigation Process (With Queries in Text Form)
 
 Below is the **step-by-step explanation** of how I solved the SQL Murder Mystery with the **queries written as plain text**:
