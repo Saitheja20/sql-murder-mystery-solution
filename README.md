@@ -37,7 +37,7 @@ sql-murder-mystery-solution/
 
 The **full visual solution** with a detailed step-by-step explanation is available here:
 
-![SQL Murder Mystery Solution](Murder_mystery_solution.png)
+![SQL Murder Mystery Solution](Murder mistory Solving Step By step With Easy Explain.png)
 
 ---
 
